@@ -7,7 +7,7 @@ driver_path = Service(cdrive_path)
 driver = webdriver.Chrome(service=driver_path)
 
 try:
-    driver.get("https://www.marvel.com")
+    driver.get("https://www.marvel.com/")
     file = open("the_latest.txt", "w")
     tags = driver.find_elements(By.XPATH, '''//*[@id="two_column-6"]/div/div[1]
 /div/ul/div[@class="mvl-card mvl-card--feed"]/div/div/p[1]''')
