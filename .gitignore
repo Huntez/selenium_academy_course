@@ -1,0 +1,5 @@
+connections.py
+chromedriver
+__pycache__/
+*.png
+*.txt
