@@ -12,7 +12,7 @@ try:
     tags = driver.find_elements(By.XPATH, '''//*[@id="two_column-6"]/div/div[1]
 /div/ul/div[@class="mvl-card mvl-card--feed"]/div/div/p[1]''')
     news_names = driver.find_elements(By.XPATH, '''//*[@id="two_column-6"]/div/div[1]/div/ul/
-div[@class="mvl-card mvl-card--feed"]/div/div/p[2]/a''')
+div[@class="mvl-card mvl-card--feed"]/div/div/p[2]''')
     for tag, nwname in zip(tags, news_names):
         file.write(tag.text + " - " + nwname.text + "\n")
     file.close()
