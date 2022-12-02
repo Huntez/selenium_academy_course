@@ -18,7 +18,6 @@ try:
         character_links = driver.find_elements(By.XPATH, links.chr_links)
         href_list += [i.get_attribute("href") for i in character_links]
         chrc_list += [i.text for i in character_names]
-        print(chrc_list)
         next_button.click()
     for link_number in range(len(href_list)):
         driver.get(href_list[link_number])
